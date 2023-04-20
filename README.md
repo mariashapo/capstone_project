@@ -1,5 +1,4 @@
-## Predicting Gentrification
-
+Predicting Gentrification
 ==============================
 
 **Research Aim:**
@@ -54,4 +53,3 @@ In this folder, you will find the following:
 	- README.txt
 ==============================
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
