@@ -265,6 +265,7 @@ def small_tracts_merge(df,dictionary):
 
 #LOG
 
+#THIS CAN BE DELETED LATER AND REPLACED WITH THE FUNCTION AFTER LATER ON
 def comb_change_calc(start,finish):
     '''
     Use
@@ -325,6 +326,8 @@ def comb_change(df,year_start,n,mode='log',perc_power=2):
         df (DataFrame): DataFrame containing Mean_Income data.
         year_start (int): Current year (the year we are making the prediction from).
         n (int): The number of years ahead we are making the prediction for.
+        mode (str): ['log','power'] (default: 'log')
+        perc_power (int): the power to raise the percentage change to 
     Returns:
         A list of combined change metric of income values.
     '''
@@ -349,13 +352,6 @@ def comb_change(df,year_start,n,mode='log',perc_power=2):
     elif mode=='power':
         for (a,b) in zip(income_val_current,income_val_final):
             comb_change_li.append(comb_change_calc_power(a,b,perc_power))
-
-
-    # Remove outliers based on standard deviation
-    #mean_val = np.mean(comb_change_li)
-    #std_val = np.std(comb_change_li)    
-
-    #comb_change_li = [x for x in comb_change_li if (mean_val - outlier_std * std_val) < x < (mean_val + outlier_std * std_val)]
 
     return comb_change_li
 
