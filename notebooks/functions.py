@@ -319,7 +319,7 @@ def comb_change_calc_power(start,finish,perc_power):
 
 #now let's define a function that selects the correct columns from the whole dataframe and applies combined change calculatation for specific years
 
-def comb_change(df,year_start,n,mode='log',perc_power=2):
+def comb_change(df,year_start,n,mode='log',perc_power=2,prefix='Mean_Income_'):
 
     '''
     Use:
@@ -335,7 +335,7 @@ def comb_change(df,year_start,n,mode='log',perc_power=2):
     '''
 
     #select income values from df for year_start (current year) by selecting the Mean_Income column for the given year
-    str_current='Mean_Income_'+str(year_start)
+    str_current=prefix+str(year_start)
     income_val_current=list(df[str_current])
 
     #year_final for which we are making the prediction (future year)
@@ -344,7 +344,7 @@ def comb_change(df,year_start,n,mode='log',perc_power=2):
     year_final=year_start+n
 
     #select the column containing Mean Income for the final year
-    str_final='Mean_Income_'+str(year_final)
+    str_final=prefix+str(year_final)
     income_val_final=list(df[str_final])
 
     comb_change_li=[]
