@@ -87,8 +87,13 @@ target/
 *.swo
 *.csv
 *.pkl
+*.json
 
 # Mypy cache
 .mypy_cache/
 Building_Permits.csv
 test1.json
+
+/London_archive/
+.archive/
+archive/
