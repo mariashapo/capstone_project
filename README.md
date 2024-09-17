@@ -7,7 +7,6 @@ Gentrification refers to a demographic transformation of a neighbourhood in whic
 
 Due to its increasing occurrence in major cities, gentrification has been studied extensively in the quest to achieve inclusive and sustainable urban development. However, in most cases, gentrification is evaluated after it occurs. To address this issue, researchers have been developing methodologies that predict gentrification before it happens. To contribute to this discourse, this project creates a machine-learning workflow to analyse building permits in Chicago. By predicting gentrification and understanding the factors that contribute to it, policymakers and communities can take proactive measures to mitigate its negative impacts and promote equitable and inclusive urban development. 
 
-
 **Datasets:**
 
 This project will be exploring 2 type of datasets: Chicago Planning Application Dataset (2006 to present, updated daily) and US Census Income Datasets (one for each year from 2010 to 2021).  
